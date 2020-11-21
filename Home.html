@@ -11,7 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <!-- Styles -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -319,7 +319,7 @@
 						<p class="feature-box">Check Out All our Pages and Learn More About Your Pet </p>
 					</div><!-- Title -->
 					<div class="team-section">
-						<div class="row">
+						<div class="row" data-aos="flip-up">
 							<div class="col-md-3">
 								<div class="member">
 									<img src="images/cathealth.jpg" alt="HealthCare">
@@ -327,21 +327,21 @@
 									<span>Caring for your cat’s health is an important responsibility as a cat owner. Learn more about common problems and more.</span>
 								</div><!-- Member -->
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3" data-aos="flip-up">
 								<div class="member">
 									<img src="images/grooming.jpg" alt="Grooming">
 									<h4><a href="Accessories.html">Grooming</a></h4>
 									<span>Grooming a cat can be intimidating. Visit our page for a guide on how to groom your cat at home while keeping your furry friend calm, happy and healthy.If you are considering adopting a cat,You really need to know about grooming</span>
 								</div><!-- Member -->
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3" data-aos="flip-up">
 								<div class="member">
 									<img src="https://i.guim.co.uk/img/media/7d04c4cb7510a4bd9a8bec449f53425aeccee895/235_183_1394_836/master/1394.jpg?width=445&quality=85&auto=format&fit=max&s=5f4fb7086838ab485bb21d84da10d8ba" alt="Article">
 									<h4><a href="Article.html">Cat Articles</a></h4>
 									<span>Getting a cat is an exciting experience that will bring you many years of joy. Read some of our articles so you can prepare yourself to bring home your new feline friend.</span>
 								</div><!-- Member -->
 							</div>
-							<div class="col-md-3">
+							<div class="col-md-3" data-aos="flip-up">
 								<div class="member">
 									<img src="https://www.rover.com/blog/wp-content/uploads/2019/06/cat-4223305_1920-300x200.jpg" alt="Accessories">
 									<h4><a href="Accessories.html" >Cat Accessories</a></h4>
@@ -360,7 +360,7 @@
 
 
 <section>
-	<div class="block remove-gap gray">
+	<div class="block remove-gap gray" data-aos="fade-in">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -462,5 +462,12 @@ $(document).ready(function() {
 
 });
 </script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+		offset: 300,
+		duration: 900,
+		once: true
+	});
+  </script>
 </body>
