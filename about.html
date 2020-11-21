@@ -11,7 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <!-- Styles -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -114,25 +114,25 @@
 
 					<div class="about-simple">
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-6" data-aos="fade-right">
 								<div class="about-text">
 									<h2>About Ramisha</h2>
 									<p>When you become a cat owner, you're initially agreeing to a sort of cat contract. You agree to provide food, shelter and a clean litter box -- in return, you'll be gifted cat hair, private concerts at 3 a.m. and the privilege of being a warm lap on demand. If you're a cat person, you wouldn't have it any other way. As the relationship grows so do your attachment with your furball.I had my very first cat when I was in college and to be more delighted I didn't have one cat at that time but triplets of only 7 days old. I know how much sensitive a cat owner can be and to what extent the person will go for one's cat. So here I am with many tips and advices that would help you and your cat have the best life you both deserve </p>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6" data-aos="fade-left">
 								<div class="about-simple-img">
 									<img src="images/ramisha.jpg" alt="570x563" />
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-6" data-aos="fade-right">
 								<div class="about-simple-img">
 									<img src="images/yasha.jpg" alt="" />
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6" data-aos="fade-left">
 								<div class="about-text">
 									<h2>About Yasha</h2>
 									<p>I’ve always loved animals more than I loved humans. I know, lots of people say this . In my case, though, I really mean it .
@@ -212,5 +212,12 @@
 <script src="js/enscroll-0.5.2.min.js"></script> <!-- Custom Scroll bar -->
 <script type="text/javascript" src="js/script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+		offset: 300,
+		duration: 900,
+		once: true
+	});
+  </script>
 </body>
