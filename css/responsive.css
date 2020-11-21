@@ -1,0 +1,174 @@
+@media (max-width:1200px){
+nav ul li a {padding: 7px 15px;}
+.welcome-box h3 {font-size: 45px;line-height: 44px;}
+.welcome-box {margin: 0;width: 100%;}
+.about {padding: 74px 0;}
+.about span {font-size: 12px;line-height: 18px;margin-bottom: 12px;}
+.about h3 {font-size: 33px;}
+.about h3 i {font-size: 124px;}
+.links {min-height:334px;}
+.link-inner strong {font-size: 120px;}
+.link-inner > p {padding: 0 30px;}
+.intro-text strong {font-size: 40px; line-height: 40px;}
+.intro-text h3 {font-size: 50px;line-height: 50px;}
+.intro-text span {font-size: 70px;}
+.special-text {padding: 0 50px;}
+.special-text .link-inner > h3 {font-size: 35px;}
+.whyus-text .title {margin-bottom: 40px;padding: 0 30px;}
+.whyus-text .title h2 {font-size: 28px;}
+.whyus-text .title > span {font-size: 12px;}
+.whyus-text .title > p {line-height: 22px;}
+.our-service > span {display: inline-block;float: none;margin-bottom: 20px;margin-right: 0;}
+.our-service {text-align: center;}
+.whyus-text {padding: 20px 0;}
+.social-bar li a {padding: 30px 20px;text-align: center;}
+.social-bar li a img {margin-bottom: 10px;margin-right: 0;}
+.social-bar li a span {float: left;text-align: center;width: 100%;}
+.social-bar li a strong {float: left;width: 100%;}
+.service-box {padding: 50px 40px;}
+.agency-detail > h3 {font-size: 25px;}
+.agency-detail > h4 {font-size: 32px;}
+.agency-detail > p {line-height: 27px;margin-top: 10px;}
+.agency-detail .readmore {margin-top: 20px;}
+.big-text {left: 0;margin: 0;position: relative; text-align: center;top: 0;}
+.desert-parallax.fancy .row .overlap {margin: 0;}
+.desert-parallax.fancy {padding: 0;}
+.text-wrap {padding: 40px 30px;}
+.about-text {padding: 40px 30px;}
+.theme-layout.boxed{width:90%;}
+}
+
+
+
+
+@media (min-width:768px) and (max-width:980px){
+.column{float:left;width:100%;margin-bottom:50px;}
+.column:last-child{margin-bottom:0;}
+.masonary > div {float: left;width: 50%;}
+.all-sponsors .row > div {float: left;width:33.334%;}
+.gallery-widget .row > div {float: left;width: 16.666%;}
+.welcome-box {margin: 0;width: 100%;}
+.welcome-box > h3 {font-size: 40px;}
+.welcome-box > p {font-size: 16px;letter-spacing: 0.3px;}
+.welcome-box > i {font-size: 150px;height: 150px;margin-left: -75px;margin-top: -75px;width: 150px;}
+.welcome-box > span {letter-spacing: 2px;}
+.blog-posts .row > div {float: left;width: 50%;}
+.responsive-header{display:block;}
+header{display:none;}
+body.move{margin-left:-200px;}
+.theme-layout{padding:0!important}
+.counters .row > div {float: left;width: 50%;}
+.counters .row > div .counter::before {display: none;}
+.team-section .row > div {float: left;width: 50%;}
+.selectors a.button {width: 50%;}
+.big-text {left: 0;margin: 0;position: relative; text-align: center;top: 0;}
+.desert-parallax.fancy .row .overlap {margin: 0;}
+.desert-parallax.fancy {padding: 0;}
+.text-wrap {padding: 40px 30px;}
+.bg-count {font-size: 100px;height: 100px;left: 30px;line-height: 100px;top: 20px; width: 100px;}
+.desert-parallax .row > div {width: 100%;}
+.about-text {padding: 40px 30px;margin-right:0;width:100%;}
+.all-products .row > div {float: left;width: 50%;}
+.simple-text {padding: 40px 30px;}
+.simple-text > span {font-size: 13px;letter-spacing: 1px;}
+.simple-text > h3 {font-size: 30px;}
+.simple-text > p {font-size: 14px;line-height: 28px;}
+.simple-text > i {font-size: 100px;height: 100px;margin-left: -50px;margin-top: -50px;width: 100px;}
+}
+
+
+
+@media (max-width:767px){
+.block .container {padding: 0 15px;}
+.column{float:left;width:100%;margin-bottom:50px;}
+.column:last-child{margin-bottom:0;}
+.masonary > div {float: left;width:100%;}
+.title > span {font-size: 12px;letter-spacing: 2px;}
+.title > h2 {font-size: 40px;}
+.title > i {font-size: 14px;letter-spacing: 0;}
+.project-box {padding: 0px 30px 60px;}
+.project-icon {padding: 20px;}
+.project-box h4 {line-height: 21px;font-size: 15px;}
+.project-box span {font-size: 13px;letter-spacing: 2px;}
+.project-overlay {padding: 10px;}
+.all-sponsors .row > div {float: left;width:50%;}
+.gallery-widget .row > div {float: left;width: 25%;}
+.welcome-box {margin: 0;width: 100%;}
+.welcome-box > span {letter-spacing: 2px;}
+.welcome-box > h3 {font-size:30px;}
+.welcome-box > p {font-size: 16px;letter-spacing: 0.3px;}
+.welcome-box > i {font-size: 150px;height: 150px;margin-left: -75px;margin-top: -75px;width: 150px;}
+.project .title{padding:0;}
+#options .option-set li {margin: 0;width: 50%;}
+#options .option-set li a {float: left;width: 100%;}
+.blog-posts .row > div {float: left;width: 50%;}
+.page-top span {letter-spacing: 2px;}
+.page-top h3 {font-size: 30px;}
+.responsive-header{display:block;}
+header{display:none;}
+body.move{margin-left:-200px;}
+.theme-layout{padding:0!important}
+.welcome-box > p {font-size: 15px;}
+.responsive-menu .logo {width: auto;}
+.welcome-box > p {font-size: 15px;}
+.about h3 {font-size: 25px;}
+.about span {margin-bottom: 0;}
+.intro-text h3 {font-size: 20px;line-height: 20px;}
+.intro-text span {font-size: 30px;line-height: 30px;}
+.intro-text strong { font-size: 15px;line-height: 10px;}
+.intro-text > i {font-size: 11px;font-weight: 200;letter-spacing: 1px;line-height: 10px;}
+.title > h2 {font-size: 25px;}
+.title > p {font-size: 12px;line-height: 24px;}
+.title > span {letter-spacing: 1px;}
+.counters .row > div {float: left;width: 50%;}
+.counters .row > div .counter::before {display: none;}
+.team-section .row > div {float: left;width: 50%;}
+.special-text {width: 100%;}
+.special-carousel.owl-carousel.owl-theme {width: 100%;}
+.whyus-img, .whyus-text {width: 100%;}
+.whyus-carousel.owl-theme.owl-carousel {width: 100%;}
+.whyus-carousel .owl-nav > div { margin: 0 !important;}
+.social-bar li{width:100%!important;}
+.blog-posts .row > div{width:100%;}
+.link-inner > p{padding:0;}
+.social-bar ul {padding: 0 20px;}
+.agency-detail {padding: 20px 15px;width: 100%;}
+.agency-img {width: 100%;}
+.agency-detail > span {font-size: 120px;top: 0;}
+.selectors a.button {width: 50%;}
+.big-text {left: 0;margin: 0;position: relative;text-align: center;top: 0;}
+.big-text {font-size: 170px;line-height: 170px;margin: 30px 0;}
+.desert-parallax h2 {font-size: 30px;line-height: 30px;}
+.desert-parallax span.subtitle {font-size: 12px;letter-spacing: 1px;line-height: 20px;}
+.big-text {left: 0;margin: 0;position: relative; text-align: center;top: 0;}
+.desert-parallax.fancy .row .overlap {margin: 0;}
+.desert-parallax.fancy {padding: 0;}
+.text-wrap {padding: 40px 30px;}
+.bg-count {font-size: 100px;height: 100px;left: 30px;line-height: 100px;top: 20px; width: 100px;}
+.desert-parallax .row > div {width: 100%;}
+.about-text {padding: 40px 30px;margin-right:0;width:100%;}
+.all-products .row > div {float: left;width: 50%;}
+.fancy-post-date {float: left;margin: 0;padding: 20px;text-align: center;width: 100%;}
+.fancy-post ul {float: left;width: 100%;}
+.simple-text {padding: 40px 30px;}
+.simple-text > span {font-size: 13px;letter-spacing: 1px;}
+.simple-text > h3 {font-size: 30px;}
+.simple-text > p {font-size: 14px;line-height: 28px;}
+.simple-text > i {font-size: 100px;height: 100px;margin-left: -50px;margin-top: -50px;width: 100px;}
+.price-table::before{display:none;}
+.price-table {padding: 40px 30px;}
+}
+
+
+@media (max-width:480px){
+.all-sponsors .row > div{width:100%;}
+.welcome-box > h3 {font-size: 25px;line-height: 25px;}
+.welcome-box > p {font-size: 13px;line-height: 29px;}
+.team-section .row > div {float: left;width:100%;}
+.counters .row > div{width:100%;}
+.special-text {padding: 0 15px;}
+.testimonial {width: 100%;margin: 0;}
+.selectors a.button {width:100%;}
+.all-products .row > div {float: left;width:100%;}
+.simple-text > h3{font-size:20px;}
+}
