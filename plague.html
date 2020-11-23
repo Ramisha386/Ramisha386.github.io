@@ -136,6 +136,42 @@
 		</div>
 	</div>
 </section>
+<div class="block gray remove-gap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 column">
+				<div class="title">
+					<span id="contat">What is your opinion?</span>
+					<h2>Feel free to share with us</h2>
+					<i>We love to hear about yours </i>
+				</div><!-- Title -->
+				<div id="message"></div>
+				<form  class="contact-form" method="post"  name="contactform" id="contactform">
+					<div class="row">
+						<div class="col-lg-12"><input name="name" type="text" id="name" placeholder="Full Name" maxlength="30" required /></div>
+						<div class="col-lg-12"><textarea name="comments" id="comments"  placeholder="Your Comments" maxlength="4096" required ></textarea></div>
+						<div class="col-md-12"><button title="" class="readmore button" type="submit" id="submit"><span>Comment <i class="fa fa-angle-double-right"></i></span></button></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section id="usercomment">
+<div class="block gray remove-gap">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 column">
+				<div class="title">
+					<span style="font-size: large; font-weight:bold; font-style: italic;">Your opinion is our treasure</span>
+				</div>
+			</div>
+		</div>
+				<ul id="pastComments"></ul>
+	</div>
+</div>
+</section>
 <footer>
 	<div class="block">
 		<div class="parallax" style="background:url(https://slidesgo.com/storage/85279/0-cute-cats.png);"></div>
@@ -201,4 +237,56 @@
 <script src="js/enscroll-0.5.2.min.js"></script> <!-- Custom Scroll bar -->
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBvQCRVWYiAeOIH57x976Sqd6H1K9SDmKI",
+    authDomain: "comments-fa4a9.firebaseapp.com",
+    databaseURL: "https://comments-fa4a9.firebaseio.com",
+    projectId: "comments-fa4a9",
+    storageBucket: "comments-fa4a9.appspot.com",
+    messagingSenderId: "451022947344",
+    appId: "1:451022947344:web:53bfe57adb199f1aba3695",
+    measurementId: "G-P728GR2HCN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+	const rootRef=firebase.database().ref();
+	const commentsRef=rootRef.child('comments');
+
+	document.getElementById('submit').addEventListener('click',function()
+{
+	var newComment=document.getElementById('comments').value.replace(/\n/g,"<br>");
+	var newPostRef=commentsRef.push();
+	newPostRef.set({
+		name:document.getElementById('name').value.trim(),
+		comment:newComment.trim(),
+		frompage:location.pathname,
+		when:firebase.database.ServerValue.TIMESTAMP
+	});
+});
+function showPastComments()
+{
+	var showat=document.getElementById('pastComments');
+	var commentRef=firebase.database().ref('comments/').orderByChild('frompage').equalTo(location.pathname);
+    commentRef.once('value',function(snapshot){
+    snapshot.forEach(function(itemSnapshot)
+  {
+    var itemData=itemSnapshot.val();
+    var comment=itemData.comment;
+    var name=itemData.name;
+    var date=new Date(itemData.when).toLocaleDateString("en-us");
+    showat.innerHTML +="<li>" + comment + "<span> -- "+name+" ( "+date+")</span></li>";
+  })
+  })
+}
+showPastComments()
 </body>
